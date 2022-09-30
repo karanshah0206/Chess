@@ -1,7 +1,14 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 const port = 8080;
 
-app.get("/", (req, res) => { res.send("Hello, World!"); });
+// Routes
+const homeRouter = require("./routes/homeRouter");
+app.use(express.static(path.join(__dirname, "components")));
+app.use("/", homeRouter);
 
-app.listen(port, () => { console.log("Chess running on port", port); });
+// Listener
+app.listen(port, () => {
+  console.log("Chess running on port", port);
+});

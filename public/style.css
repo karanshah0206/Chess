@@ -1,0 +1,60 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hidden {
+  display: none;
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: #151515;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.2rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: #ffffff;
+}
+
+/* Alert Box */
+.alertBox {
+  width: 50vw;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.alertBox p {
+  text-align: center;
+  color: #ffffff;
+}
+.alertBox.red {
+  background-color: #ff0000;
+}
+.alertBox.orange {
+  background-color: #ff8800;
+}
+
+/* GitHub Octo */
+#octo {
+  width: 50px;
+  height: 50px;
+  fill: #151515;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
